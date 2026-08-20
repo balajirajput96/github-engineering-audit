@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-20T23:45:14.931Z",
+  "reportDate": "2026-08-20",
+  "mission": {
+    "maximumCycles": 2400,
+    "secretPolicy": "No credentials, tokens, keys, cookies, raw shell history, or session data are stored."
+  },
+  "githubHealth": {
+    "monitorStatus": "active",
+    "latestRunStatus": "external_blocker",
+    "actionableCount": 0,
+    "pendingCount": 2,
+    "externalBlockerCount": 24,
+    "repairTaskCreated": false
+  },
+  "toolAvailability": [
+    {
+      "tool": "git",
+      "availability": "available"
+    },
+    {
+      "tool": "gh",
+      "availability": "available and authenticated"
+    },
+    {
+      "tool": "gws",
+      "availability": "available"
+    },
+    {
+      "tool": "gemini",
+      "availability": "not installed"
+    },
+    {
+      "tool": "antigravity",
+      "availability": "not installed"
+    },
+    {
+      "tool": "julius",
+      "availability": "not installed"
+    },
+    {
+      "tool": "datadog",
+      "availability": "not installed"
+    }
+  ],
+  "archive": {
+    "repository": "balajirajput96/github-engineering-audit",
+    "redactionValidated": true
+  },
+  "nextAction": "Run the next scheduled GitHub health verification."
+}
