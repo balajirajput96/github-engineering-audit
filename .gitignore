@@ -1,0 +1,17 @@
+# Secrets and local authentication material
+.env
+.env.*
+*.pem
+*.key
+*token*
+*secret*
+*cookie*
+*credential*
+
+# Raw local history and generated system state
+.bash_history
+.zsh_history
+.manus/
+node_modules/
+dist/
+

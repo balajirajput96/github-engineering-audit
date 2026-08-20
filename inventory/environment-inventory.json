@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-20T15:12:00Z",
+  "redaction": {
+    "rawTerminalHistoryStored": false,
+    "credentialValuesStored": false,
+    "sensitiveHistoryLinesExcluded": true
+  },
+  "repositories": [
+    {"path": "/home/ubuntu/github-repairs/AgentGPT", "branch": "main", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/chatbot", "branch": "main", "status": "working", "dirtyFileCount": 0, "remotes": ["origin"]},
+    {"path": "/home/ubuntu/github-repairs/cli", "branch": "trunk", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/codex-source", "branch": "main", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/dotgithub-source", "branch": "main", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/fastmcp", "branch": "main", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/go-ethereum", "branch": "master", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/jupyterlab-git-pr1429", "branch": "repair-pr-1429", "status": "incomplete", "dirtyFileCount": 0, "remotes": ["fork", "origin"]},
+    {"path": "/home/ubuntu/github-repairs/microsoft-365-agents-toolkit", "branch": "dev", "status": "requires-preservation-review", "dirtyFileCount": 8748, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/rules-rs-source", "branch": "main", "status": "working", "dirtyFileCount": 0, "remotes": ["origin"]},
+    {"path": "/home/ubuntu/github-repairs/rules-rust-source", "branch": "detached", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/vscode-live-server-plus-plus", "branch": "master", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/github-repairs/vue-hcaptcha", "branch": "master", "status": "working", "dirtyFileCount": 0, "remotes": ["origin", "upstream"]},
+    {"path": "/home/ubuntu/openclaw-workspace", "branch": "main", "status": "working", "dirtyFileCount": 1, "remotes": ["origin"]}
+  ],
+  "approvedIntegrations": [
+    {"name": "GitHub", "availability": "enabled", "use": "repository and pull-request engineering"},
+    {"name": "Google Gemini connector", "availability": "enabled", "use": "approved connector capability when required"},
+    {"name": "Google Workspace", "availability": "enabled", "use": "authorized workspace operations when selected"}
+  ],
+  "toolAvailability": [
+    {"tool": "git", "availability": "available"},
+    {"tool": "gh", "availability": "available and authenticated"},
+    {"tool": "gws", "availability": "available"},
+    {"tool": "gemini", "availability": "not installed"},
+    {"tool": "antigravity", "availability": "not installed"},
+    {"tool": "julius", "availability": "not installed"},
+    {"tool": "datadog", "availability": "not installed"}
+  ],
+  "automation": [
+    {"name": "hourly-github-ci-health", "status": "active", "purpose": "actionable PR health scan and repair-task trigger", "lifecycleHours": 2400}
+  ]
+}
+
