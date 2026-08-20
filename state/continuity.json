@@ -4,22 +4,16 @@
   "cycle": {
     "number": 1,
     "maximum": 2400,
-    "startedAt": "2026-08-20T12:10:58Z",
-    "lastVerifiedAt": "2026-08-20T15:11:53Z"
+    "lastVerifiedAt": "2026-08-20T23:45:14.931Z"
   },
   "lastVerifiedState": {
-    "hourlyGithubHealthMonitor": "active",
-    "latestHeartbeatResult": "success",
-    "latestHeartbeatDurationMs": 20639,
-    "privateAuditRepository": "initialized",
-    "redactionPolicy": "active"
+    "monitorStatus": "active",
+    "latestRunStatus": "external_blocker",
+    "actionableCount": 0,
+    "pendingCount": 2,
+    "externalBlockerCount": 24,
+    "repairTaskCreated": false
   },
-  "currentPriorities": [
-    "Publish the initial redacted historical inventory.",
-    "Implement validated daily private audit publication.",
-    "Preserve and classify the large Microsoft 365 working-tree state before any modification."
-  ],
-  "nextAction": "Initialize the private audit repository with a validated first commit and build the redacted daily publisher.",
-  "secretPolicy": "Never store credentials, tokens, keys, cookies, raw shell history, or session data."
+  "nextAction": "Run the next scheduled GitHub health verification.",
+  "secretPolicy": "No credentials, tokens, keys, cookies, raw shell history, or session data are stored."
 }
-
