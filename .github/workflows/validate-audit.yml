@@ -1,0 +1,27 @@
+name: Validate redacted engineering audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "15 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON records
+        run: |
+          find inventory state reports -type f -name '*.json' -print0 2>/dev/null | xargs -0 -r -n1 jq empty
+      - name: Block credential-like content
+        run: |
+          ! grep -RInE '(BEGIN (RSA |OPENSSH )?PRIVATE KEY|ghp_[A-Za-z0-9]|github_pat_[A-Za-z0-9]|sk-[A-Za-z0-9]|Bearer[[:space:]]+[A-Za-z0-9._-]{12,}|password[[:space:]]*[:=]|api[_-]?key[[:space:]]*[:=])' . --exclude-dir=.git
+      - name: Confirm policy document
+        run: test -f docs/redaction-policy.md
