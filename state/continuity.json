@@ -4,16 +4,16 @@
   "cycle": {
     "number": 1,
     "maximum": 2400,
-    "lastVerifiedAt": "2026-08-21T00:23:30.798Z"
+    "lastVerifiedAt": "2026-08-21T01:40:09.423Z"
   },
   "lastVerifiedState": {
     "monitorStatus": "active",
-    "latestRunStatus": "external_blocker",
-    "actionableCount": 0,
-    "pendingCount": 2,
+    "latestRunStatus": "actionable",
+    "actionableCount": 2,
+    "pendingCount": 0,
     "externalBlockerCount": 24,
-    "repairTaskCreated": false
+    "repairTaskCreated": true
   },
-  "nextAction": "Run the next scheduled GitHub health verification.",
+  "nextAction": "Continue only the highest-priority actionable GitHub repair task.",
   "secretPolicy": "No credentials, tokens, keys, cookies, raw shell history, or session data are stored."
 }
