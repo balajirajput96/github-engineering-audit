@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-21T00:25:49Z",
+  "repository": "/home/ubuntu/github-repairs/microsoft-365-agents-toolkit",
+  "branch": "dev",
+  "classification": "requires-preservation-review",
+  "finding": "A large staged index delta was detected while the unstaged worktree diff was empty. The index tree did not match the currently known validation worktree commit or any locally referenced commit tree.",
+  "safeguards": {
+    "indexBackupCreated": true,
+    "backupDigestSha256": "441d98e5e194716cb44f7c125c8918f14318a45d45dcd1be845115d0897786b4",
+    "destructiveActionsPerformed": false
+  },
+  "nextAction": "Perform only read-only classification until the staged state source is understood; do not reset, commit, rebase, or clean the repository."
+}
