@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-22T01:37:09.741Z",
+  "reportDate": "2026-08-22",
+  "mission": {
+    "maximumCycles": 2400,
+    "secretPolicy": "No credentials, tokens, keys, cookies, raw shell history, or session data are stored."
+  },
+  "githubHealth": {
+    "monitorStatus": "active",
+    "latestRunStatus": "actionable",
+    "actionableCount": 3,
+    "pendingCount": 4,
+    "externalBlockerCount": 22,
+    "repairTaskCreated": true
+  },
+  "schedules": [
+    {
+      "name": "hourly-github-ci-health",
+      "status": "active",
+      "lifecycleExpiresAt": "2026-11-28T12:10:59.000Z",
+      "lastActivityAt": "2026-08-22T01:29:35.000Z"
+    },
+    {
+      "name": "daily-redacted-engineering-audit",
+      "status": "active",
+      "lifecycleExpiresAt": "2026-11-28T20:03:24.000Z",
+      "lastActivityAt": "2026-08-21"
+    }
+  ],
+  "toolAvailability": [
+    {
+      "tool": "git",
+      "availability": "available"
+    },
+    {
+      "tool": "gh",
+      "availability": "available and authenticated"
+    },
+    {
+      "tool": "gws",
+      "availability": "available"
+    },
+    {
+      "tool": "gemini",
+      "availability": "not installed"
+    },
+    {
+      "tool": "antigravity",
+      "availability": "not installed"
+    },
+    {
+      "tool": "julius",
+      "availability": "not installed"
+    },
+    {
+      "tool": "datadog",
+      "availability": "not installed"
+    }
+  ],
+  "archive": {
+    "repository": "balajirajput96/github-engineering-audit",
+    "redactionValidated": true
+  },
+  "nextAction": "Continue only the highest-priority actionable GitHub repair task."
+}
